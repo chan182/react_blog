@@ -1,7 +1,15 @@
-import React from "react";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import PostList from "../../components/PostList";
 
-const PostList = () => {
-	return <div>Post List Page 입니다.</div>;
+const PostsPage = () => {
+    return (
+        <>
+            <Header />
+            <PostList hasNavigation={false} />
+            <Footer />
+        </>
+    );
 };
 
-export default PostList;
+export default PostsPage;
